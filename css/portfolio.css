@@ -1,3 +1,36 @@
 body {
-  padding-top: 50px;
+  padding-top: 40px;
+}
+.nav-container {
+  max-width: 1000px;
+}
+#home {
+  background-color: blue;
+}
+
+#about {
+  background: url("https://farm7.staticflickr.com/6181/6159118656_42ea72b2c0_b.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#portfolio {
+  background-color: green;
+  background-size: cover;
+}
+
+.pane {
+  height: 850px;
+  padding-top: 60px;
+  margin-top: -60px;
+}
+
+.project-container {
+  text-align: center;
+}
+.project {
+  display: inline-block;
+  margin: 15px;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
 }
