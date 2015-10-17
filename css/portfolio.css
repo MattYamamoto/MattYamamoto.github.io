@@ -19,9 +19,13 @@ body {
 }
 
 .pane {
-  height: 850px;
+  min-height: 850px;
   padding-top: 60px;
   margin-top: -60px;
+}
+.pane-content {
+  max-width: 1000px;
+  margin: auto;
 }
 
 .project-container {
