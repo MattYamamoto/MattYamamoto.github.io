@@ -4,22 +4,9 @@ body {
 .nav-container {
   max-width: 1000px;
 }
-#home {
-  background-color: blue;
-}
-
-#about {
-  background: url("https://farm7.staticflickr.com/6181/6159118656_42ea72b2c0_b.jpg") no-repeat center center fixed;
-  background-size: cover;
-}
-
-#portfolio {
-  background-color: green;
-  background-size: cover;
-}
 
 .pane {
-  min-height: 850px;
+  min-height: 1050px;
   padding-top: 60px;
   margin-top: -60px;
 }
@@ -27,6 +14,45 @@ body {
   max-width: 1000px;
   margin: auto;
 }
+
+#home {
+  background: linear-gradient(hsla(360, 100%, 0%, 0.4), hsla(360, 100%, 0%, 0.5)) fixed,
+              url(/images/overlay_stripes_diag_dr.png) repeat fixed,
+              url(/images/Denali_camp.jpg) no-repeat center center fixed;
+  background-size: auto, auto, cover;
+
+  color: white;
+}
+
+
+#about {
+  background: url(/images/overlay_stripes_diag_dl.png) repeat fixed,
+               linear-gradient(hsla(360, 0%, 0%, 0.5) 70%, hsla(360, 0%, 80%, 0.4)) fixed,
+               url(/images/14_camp.jpg) no-repeat center center fixed;
+  background-size: auto, auto, cover;
+  color: white;
+}
+
+.head-shot {
+  width: 200px;
+}
+
+#portfolio {
+  background:  url(/images/overlay_stripes_vertical.png) repeat fixed,
+               linear-gradient(hsla(360, 0%, 0%, 0.5) 70%, hsla(360, 0%, 80%, 0.4)) fixed,
+               url(/images/reflections.jpg) no-repeat center center fixed;
+  background-size: auto, auto, cover;
+  position: relative;
+}
+
+#contact {
+  background: linear-gradient(hsla(360, 0%, 0%, 0.6), hsla(360, 0%, 0%, 0.6)) fixed,
+  url(/images/overlay_stripes_diag_dl.png) repeat fixed,
+              url(/images/swirls.jpg) no-repeat center center fixed;
+  background-size: auto, auto, cover;
+}
+
+
 
 .project-container {
   text-align: center;
@@ -52,12 +78,12 @@ body {
   bottom: 0;
   left: 0;
   width: 100%;
-  padding: 35px 15px;
+  padding: 55px 15px 35px 15px;
   text-align: left;
   color: #fff;
   background: linear-gradient(to bottom,
     hsla(180, 0%, 0%, 0),
-    hsla(180, 0%, 0%, 0.6) 35%,
+    hsla(180, 0%, 0%, 0.7) 45%,
     hsla(180, 0%, 0%, 0.8));
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
