@@ -8,6 +8,7 @@ body {
 .pane {
   min-height: 1050px;
   padding-top: 60px;
+  margin-top: -10px;
 }
 .pane-content {
   max-width: 1000px;
@@ -34,9 +35,9 @@ body {
 
 
 #about {
-  background: linear-gradient(hsla(30, 25%, 30%, 0.3) 70%, hsla(30, 25%, 30%, 0.6)) fixed,
-               url(/images/14_camp.jpg) no-repeat center center fixed;
-  background-size: auto, auto, cover;
+  background: linear-gradient(hsla(30, 25%, 30%, 0.3) 70%,
+                               hsla(30, 25%, 30%, 0.6)),
+              url(/images/ricepaper.png) repeat fixed;
   color: white;
 }
 
@@ -45,12 +46,16 @@ body {
 }
 
 #portfolio {
-  background:  linear-gradient(hsla(210, 25%, 30%, 0.6), hsla(210, 25%, 30%, 0.6)), url(/images/ricepaper.png) repeat fixed;
+  background: linear-gradient(hsla(210, 25%, 30%, 0.6),
+                              hsla(210, 25%, 30%, 0.6)),
+               url(/images/14_camp.jpg) no-repeat center center fixed;
+  background-size: auto, auto, cover;
   position: relative;
 }
 
 #contact {
-  background: linear-gradient(hsla(210, 25%, 30%, 0.6), hsla(210, 25%, 30%, 0.6));
+  background: linear-gradient(hsla(210, 25%, 30%, 0.6),
+                              hsla(210, 25%, 30%, 0.6));
 }
 
 
@@ -58,17 +63,33 @@ body {
 .project-container {
   text-align: center;
 }
-.project {
+.project-tile {
   display: inline-block;
   position: relative;
-  background-color: hsla(180, 100%, 0%, 0.7);
-  border-radius: 15px;
-  margin: 15px;
-  padding: 10px;
+
+  padding: 20px;
   width: 300px;
   height: 300px;
-  //border: 1px solid hsla(0, 0%, 30%, 1);
-  box-shadow: 4px 4px 2px 1px hsla(0, 0%, 0%, 0.6);
+  //margin: 5px -3px;
+  border: 1px solid #ccc;
+  border-right: 1px solid #444;
+  border-bottom: 1px solid #444;
+  transition: all 300ms ease-out;
+}
+
+.project-tile:hover {
+  box-shadow: 6px 6px 4px 4px hsla(0, 0%, 0%, 0.8);
+  transform: translate(-3px, -3px);
+  z-index: 5;
+}
+
+.project {
+  position: relative;
+  height: 100%;
+  background-color: hsla(180, 100%, 100%, 0.7);
+  border: 1px solid #222;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
 }
 
 .project img {
@@ -78,15 +99,13 @@ body {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 100%;
-  padding: 55px 15px 35px 15px;
+  width: 100%;;
+  padding: 55px 5px 20px 5px;
   text-align: left;
   color: #fff;
   background: linear-gradient(to bottom,
     hsla(180, 0%, 0%, 0),
-    hsla(180, 0%, 0%, 0.7) 45%,
-    hsla(180, 0%, 0%, 0.8));
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
+    hsla(180, 0%, 0%, 0.9) 40%,
+    hsla(180, 0%, 0%, 0.9));
 
 }
