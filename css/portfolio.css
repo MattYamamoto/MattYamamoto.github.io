@@ -58,6 +58,13 @@ body {
                               hsla(210, 25%, 30%, 0.6));
 }
 
+#footer {
+  height: 300px;
+  background: white;
+  padding-top: 60px;
+  margin-top: -10px;
+}
+
 
 
 .project-container {
